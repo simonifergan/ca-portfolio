@@ -12,7 +12,7 @@ function createProjs() {
                         be able to see all the existing users in the database.`,
             url: 'projs/101/index.html',
             publishedAt: getTimestampByDate('01-31-2019'),
-            labels: ['Login', 'Admin'], 
+            labels: ['Interface', 'HTML'], 
         },
         {
             id: 102,
@@ -23,7 +23,19 @@ function createProjs() {
                         My interpetation is what makes it unique and personal.`,
             url: 'projs/102/index.html',
             publishedAt: getTimestampByDate('01-24-2019'),
-            labels: ['Login', 'Admin'], 
+            labels: ['Game', 'Javascript', 'Logic'], 
+        },
+        {
+            id: 103,
+            name: 'Snake',
+            title: 'Game',
+            previewDesc: 'Good old Snake.',
+            fullDesc: `This game was programmed before I started CodingAcademy's bootcamp. Think about it,
+                        I did this when I knew nothing about Javascript. What will I be able to make 
+                        when I'll know (almost) everything??`,
+            url: 'projs/103/snake.html',
+            publishedAt: getTimestampByDate('11-24-2018'),
+            labels: ['Game', 'Javascript', 'HTML5Canvas'], 
         },
     ]
 }

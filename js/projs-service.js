@@ -9,7 +9,8 @@ function createProjs() {
             previewDesc: 'A login form that allows admin users to view the user list in different formats.',
             fullDesc: `A login page will direct users to some "secret content". However, users which are
                         authorized as administrators will be granted access to the admin page, where they will
-                        be able to see all the existing users in the database.`,
+                        be able to see all the existing users in the database. Try it and make sure to login
+                        with username: sensation; password: molecule`,
             url: 'projs/101/index.html',
             publishedAt: getTimestampByDate('01-31-2019'),
             labels: ['Interface', 'HTML'], 

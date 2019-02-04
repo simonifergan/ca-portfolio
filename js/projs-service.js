@@ -33,7 +33,7 @@ function createProjs() {
             previewDesc: 'Good old Snake.',
             fullDesc: `This game was programmed before I started CodingAcademy's bootcamp. Think about it,
                         I did this when I knew nothing about Javascript. What will I be able to make 
-                        when I'll know (almost) everything??`,
+                        when I'll know (not-even-close-to) everything??`,
             url: 'projs/103/snake.html',
             publishedAt: getTimestampByDate('11-24-2018'),
             labels: ['Game', 'Javascript', 'HTML5Canvas'], 

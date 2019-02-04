@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin Page</title>
+</head>
+<body onload="init();">
+    <header>
+        <h1>Welcome master,&nbsp;<span class="admin-name"></span></h1>
+        <div class="header-btns">
+            <button class="btn logout" onclick="onReturnToHomepage();">Return</button>
+            <button class="btn logout" onclick="doLogout();">Logout</button>
+        </div>
+        <div class="filter-view">
+            <button class="btn view-table" onclick="onGenerateUsersTable();">☰</button>
+            <button class="btn view-icons" onclick="onGenerateUsersIcons();">☐</button>
+        </div>
+    </header>
+    <div class="content">
+        <!-- GENERATE HERE -->
+    </div>
+    <script src="js/util-service.js"></script>
+    <script src="js/user-controller.js"></script>
+    <script src="js/user-service.js"></script>
+    <script src="js/admin-controller.js"></script>
+</body>
+</html>

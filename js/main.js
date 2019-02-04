@@ -1,1 +1,7 @@
-console.log('Starting up');
+
+function initPage() {
+    console.log('Starting up');
+    createProjs();
+    renderProjs();
+}
+

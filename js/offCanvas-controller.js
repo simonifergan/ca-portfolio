@@ -7,13 +7,11 @@ function toggleCanvas(){
 
 function onSubmitMessage(ev) {
     ev.preventDefault();
-    console.log('here I am once again');
     let name = $('.send-name').val();
     let email = $('.send-email').val();
     let msg = $('.send-msg').val();
-    msg += `\n\nSender: ${name} -- ${email}`;
     //send msg
-    let sendLink = EMAIL_ME.replace('BODY', msg);
+    let sendLink = EMAIL_ME.replace('SUBJECT', name + ' ' + email).replace('BODY', msg);
     window.open(sendLink, '_blank');
     toggleCanvas();
     // reset form

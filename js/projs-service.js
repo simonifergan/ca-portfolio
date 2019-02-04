@@ -13,7 +13,7 @@ function createProjs() {
                         with username: sensation; password: molecule`,
             url: 'projs/101/index.html',
             publishedAt: getTimestampByDate('01-31-2019'),
-            labels: ['Interface', 'HTML'], 
+            labels: ['Interface', 'Javascript', 'HTML'], 
         },
         {
             id: 102,

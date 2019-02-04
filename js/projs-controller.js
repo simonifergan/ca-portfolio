@@ -31,8 +31,6 @@
     Close Project</button> */
 
 function renderProjs() {
-  debugger;
-
   let projs = getProjsToDisplay();
   let strHtmls = projs.map(proj => {
     let labels = proj.labels.map(label => `<span class="badge badge-pill badge-dark">${label}
@@ -66,7 +64,7 @@ function renderModal(projId) {
                   <p>${proj.fullDesc}</p>
                   <ul class="list-inline">
                     <li>${getDateForModal(proj.publishedAt)}</li>
-                    <li><a target="_blank" class="btn btn-link" href="${proj.url}">See for yourself!</a></li>
+                    <li><a target="_blank" class="btn btn-link" href="${proj.url}">Launch Project</a></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                       <i class="fa fa-times"></i>

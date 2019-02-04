@@ -63,10 +63,10 @@ body {
     -webkit-tap-highlight-color: #fed136;
 }
 .offcanvas-btn {
-    z-index: 100000;
+    z-index: 1000000001;
     position: fixed;
-    top: 8%;
-    left: 3%;
+    top: 32%;
+    left: 0.5%;
     height: 50px;
     width: 50px;
     background: #e2cb36;
@@ -85,7 +85,8 @@ body {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: red;
+    background: #3a3635;
+    color: #e3e3e3;
     width: 80vw;
     left: -80vw;
     transition: all 0.3s ease;
@@ -112,6 +113,13 @@ body {
         width: 30vw;
         left: -30vw;
     }
+    .offcanvas-btn {
+        top: 8%;
+    }
+    .form-control.optimize-input {
+        width: 100%;
+    }
+    
 }
 .offcanvas-aside-open {
     left: 0;
@@ -124,6 +132,7 @@ body {
 }
 #mainNav .navbar-toggler {
     font-size: 12px;
+    margin-right: 5px;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
@@ -185,7 +194,6 @@ body {
         font-size: 1.25em;
         padding: 12px 0;
     }
-   
 }
 header.masthead {
     text-align: center;
@@ -238,6 +246,10 @@ header.masthead .intro-text .intro-heading {
         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         text-transform: uppercase;
     }
+    .form-control.optimize-input {
+        width: 220px;
+    }
+  
 }
 .service-heading {
     margin: 15px 0;

@@ -26,7 +26,7 @@
 </head>
 
 <body id="page-top" onload="initPage()">
-  <div class="offcanvas-btn" onClick="openCanvas()">
+  <div class="offcanvas-btn" onclick="toggleCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
   <aside class="offcanvas-aside">
@@ -43,20 +43,22 @@
                 <form id="reused_form">
                   <div class="form-group">
                     <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
-                    <input type="text" name="name" class="form-control optimize-input" placeholder="Enter Name">
+                    <input type="text" name="name" class="form-control optimize-input send-name" placeholder="Enter Name">
                   </div>
                   <div class="form-group">
                     <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-                    <input type="email" name="email" class="form-control optimize-input" placeholder="Enter Email">
+                    <input type="email" name="email" class="form-control optimize-input send-email" placeholder="Enter Email">
                   </div>
                   <div class="form-group">
                     <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
-                    <textarea rows="3" name="message" class="form-control optimize-input" placeholder="Type Your Message"></textarea>
+                    <textarea rows="3" name="message" class="form-control optimize-input send-msg" placeholder="Type Your Message"></textarea>
                   </div>
 
 
                   <div class="form-group">
-                    <button class="btn btn-raised btn-block btn-warning">Send →</button>
+                    <button onclick ="onSubmitMessage(event)"class="btn btn-raised btn-block btn-warning">
+                      Send →
+                    </button>
                   </div>
                 </form>
               </div>
@@ -278,7 +280,7 @@
   <!-- Custom scripts for this template -->
   <script src="js/util.js"></script>
   <script src="js/ca-gallery.js"></script>
-  <script src="js/offCanvas.js"></script>
+  <script src="js/offCanvas-controller.js"></script>
   <script src="js/projs-service.js"></script>
   <script src="js/projs-controller.js"></script>
   <script src="js/main.js"></script>

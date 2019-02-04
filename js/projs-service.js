@@ -41,6 +41,9 @@ function createProjs() {
     ]
 }
 
+// I did not see a reason to implement a createProj function for each project, since I enter each project manually. 
+// In the future, an appropriate modal + form can easily be implemented.
+
 function getProjById(projId) {
     return gProjs.find(proj => proj.id === projId);
 }

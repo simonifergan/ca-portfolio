@@ -1,0 +1,272 @@
+@import url('reset.css');
+/* @import url('mobile.css'); */
+
+html {
+    font-size: 16px;
+}
+
+body[dir="ltr"] { direction: ltr; unicode-bidi: embed; }
+
+body[dir="rtl"] { direction: rtl; unicode-bidi: embed; }
+
+body > * {
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #cac2a6, #e3e3e3);
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 10px;
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.logo .icon {
+    font-size: 2em;
+    margin: 0 10px;
+}
+
+.logo h1 {
+    font-size: 2em;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.modal-bg {
+    background-color: rgba(31, 28, 28, 0.705);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-content-container {
+    position: absolute;
+    background-color: #cac2a6;
+    height: 50%;
+    width: 40%;
+    box-shadow: 0 0 3px 3px rgba(51, 51, 51, 0.692);
+    font-family: 'PT Serif', serif;
+    border-radius: 5px;
+}
+
+.modal-content-container label {
+    margin: 5px;
+}
+
+.modal-content-container input {
+    margin: 2px;
+    padding: 5px;
+    width: 50%;
+    font-family: 'Lora';
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: #333;
+    outline: none;
+    text-align: center;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-form > * {
+    margin: 10px;
+}
+
+.modal-btns-container {
+    display: flex;
+}
+
+.wrong-input {
+    color: rgb(223, 67, 67);
+}
+
+.btn {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 5px 5px;
+    font-family: Arial,sans-serif;
+    border-radius: 4px;
+    padding: 10px 25px 10px 25px;
+    border: solid 0 #c5dcec;
+    color: #f4f4f4;
+}
+
+
+.btn-delete {
+    background-color: rgb(216, 77, 77);
+    border-bottom: 2px solid rgb(240, 44, 44);
+}
+
+.btn-delete:hover {
+    background-color: rgb(182, 18, 18);
+}
+
+.btn-add {
+    background: #1abc9c;
+    border-bottom: 2px solid #3a9a95;
+    height: 10%;
+}
+
+.btn-add:hover {
+    background:rgb(29, 122, 104);
+}
+
+.btn-modify {
+    background-color: #e79043;
+    border-bottom: #9e4b02;
+}
+
+.btn-modify:hover {
+    background-color: #f17100;
+}
+
+.btn-page {
+    background-color: rgb(47, 143, 226);
+}
+
+.btn-page:hover {
+    background-color: rgb(50, 101, 146);
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+.row-dark > .link {
+    color: white;
+}
+
+/* BOOKS TABLE */
+
+.table-books {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    font-family: 'PT Serif', serif;
+}
+
+.table-books .tr-headers {
+    background-color: black;
+    color: #ebe6e6;
+    font-size: 18px;
+}
+
+.table-books .tr-headers td {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.table-books-body .tr-book > td {
+    padding: 10px;
+} 
+
+.table-books tfoot {
+    display: flex;
+}
+
+.book-actions {
+    display: flex;
+    line-height: 50px;
+}
+
+.row-dark {
+    background-color: #333;
+    color: #e3e3e3;
+}
+
+.row-light {
+    background-color: #faf5f5;
+}
+
+/* end of books table */
+
+.modal-view-book {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.book-cover {
+    width: 20%;
+    height: 60%;
+    border: 1px solid color;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px black;
+}
+
+.view-book-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-rating {
+    background-color: silver;
+    padding: 5px;
+}
+.rating-box > *{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.view-book-content > * {
+    margin: 10px;
+    padding: 5px;
+}
+
+.modal-modify-book {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-modify-book > * { margin: 10px; }
+
+footer {
+    position: absolute;
+    background-color: #333;
+    text-align: center;
+    color:#e3e3e3;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,111 @@
+<!-- No jQuery, No Bootstrap -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Book Shop</title>
+</head>
+
+<body onload="init()">
+
+    <!-- Modal -->
+    <aside class="modal-bg" style="display: none">
+        <div class="modal-content-container">
+
+            <!-- Add book form -->
+            <form class="modal-form add-book-form" style="display: none">
+                <h1 data-trans="add-book-title">Enter new book details:</h1>
+                <div data-trans="wrong-input" class="wrong-input form" style="display: none;">Wrong input, please try again!</div>
+                <label data-trans="book-name" for="">Name:</label>
+                <input type="text" id="bookName" required />
+                <label data-trans="book-author" for="">Author:</label>
+                <input type="text" id="bookAuthor" required />
+                <label data-trans="book-price" for="">Price:</label>
+                <input type="number" id="bookPrice" required />
+                <div class="modal-btns-container">
+                    <button data-trans="btn-apply" onclick="onAddBook(event)" class="btn btn-add">Apply</button>
+                    <button data-trans="btn-cancel" onclick="onCloseModal(event)" class="btn btn-delete">Cancel</button>
+                </div>
+            </form>
+            <!-- end of add book form -->
+
+            <div class="modal-view-book" style="display: none">
+                <!-- generate view book modal content here -->
+            </div>
+
+            <!-- Modify book content -->
+            <div class="modal-modify-book" style="display: none">
+                <label>
+                    <span data-trans="modify-book-title">Enter a new price for</span>
+                    <span class="book-name-span"></span>
+                    <span data-trans="modify-book-current">Currently</span>
+                    <span class="book-price-span"></span>
+                </label>
+                <div class="wrong-input modify" style="display: none;">Wrong input, please try again!</div>
+                <input type="text" id="newBookPrice" />
+                <div class="modal-btns-container">
+                    <!-- generate buttons here -->
+                </div>
+            </div>
+            <!-- End of modify book content -->
+
+        </div>
+    </aside>
+    <!-- Modal ends -->
+
+    <header class="logo">
+        <div class="icon">📖</div>
+        <h1 data-trans="title">BOOK SHOP</h1>
+        <select class="flex-end" onchange="onLangChange(this.value)">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+        </select>
+    </header>
+
+    <!-- App container -->
+    <section class="app">
+
+
+
+
+        <table class="table-books">
+            <thead class="tr-headers">
+                <td data-trans="th-book-name" onclick="onSortBy('name')">Title</td>
+                <td data-trans="th-book-author" onclick="onSortBy('author')">Author</td>
+                <td data-trans="th-book-qty" onclick="onSortBy('qty')">Quantity</td>
+                <td data-trans="th-book-price" onclick="onSortBy('price')">Price</td>
+                <td data-trans="th-book-rating" onclick="onSortBy('rating')">Rating</td>
+                <td>
+                    <button data-trans="btn-add-book" class="btn btn-add" onclick="renderAddBookModal()">Add Book</button>
+                </td>
+            </thead>
+            <tbody class="table-books-body">
+                <!-- GENERATE BOOKS -->
+            </tbody>
+            <tfoot class="pages-nav-container">
+
+            </tfoot>
+        </table>
+
+
+        <footer dir="ltr">
+            <h6>☕&nbsp;&rarr;&rarr; &copy; 2019</h6>
+        </footer>
+
+    </section>
+    <!-- End of app container -->
+
+    <script src="js/util-service.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/modal-controller.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>

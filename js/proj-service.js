@@ -5,7 +5,7 @@ function createProjs() {
         {
             id: 101,
             name: 'Safe Content',
-            title: 'Login Page',
+            title: 'Launch Safe Content',
             previewDesc: 'A login form that allows admin users to view the user list in different formats.',
             fullDesc: `A login page will direct users to some "secret content". However, users which are
                         authorized as administrators will be granted access to the admin page, where they will
@@ -18,7 +18,7 @@ function createProjs() {
         {
             id: 102,
             name: 'Minesweeper',
-            title: 'Game',
+            title: 'Launch Minesweeper',
             previewDesc: 'A minesweeper-esque game with a personal twist.',
             fullDesc: `This project keeps all the minesweeper game-rules from the MS Windows versions.
                         My interpetation is what makes it unique and personal.`,
@@ -29,7 +29,7 @@ function createProjs() {
         {
             id: 103,
             name: 'Snake',
-            title: 'Game',
+            title: 'Launch Snake',
             previewDesc: 'Good old Snake.',
             fullDesc: `This game was programmed before I started Coding Academy's bootcamp. Think about it,
                         I did this when I knew nothing about Javascript. What will I be able to make 
@@ -41,7 +41,7 @@ function createProjs() {
         {
             id: 104,
             name: 'Book Shop',
-            title: 'Localization',
+            title: 'Launch Book Shop',
             previewDesc: 'A user interface for managing a book store, with localization to English and Hebrew',
             fullDesc: `The book store project is localized to English & Hebrew. The dynamic interface also calculates
                         the currency exchange between New Israeli Shekels and US Dollars.`,

@@ -10,6 +10,10 @@ function onSubmitMessage(ev) {
     let name = $('.send-name').val();
     let email = $('.send-email').val();
     let msg = $('.send-msg').val();
+    if (!name || !email || !msg) {
+        toggleCanvas();
+        return;
+    }
     //send msg
     let sendLink = EMAIL_ME_LINK.replace('SUBJECT', name + ' ' + email).replace('BODY', msg);
     window.open(sendLink, '_blank');

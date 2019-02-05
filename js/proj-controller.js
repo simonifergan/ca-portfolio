@@ -28,8 +28,10 @@ function renderModal(projId) {
   let proj = getProjById(+projId);
   let strHtml = ` <h2>${proj.name}</h2>
                   <p class="item-intro text-muted">${proj.previewDesc}</p>
-                  <img class="img-fluid d-block mx-auto" 
+                  <a target="_blank" href="${proj.url}">
+                    <img class="img-fluid d-block mx-auto" title="${proj.title}"
                       src="img/portfolio/${proj.id}.png" alt="Project Preview Image" />
+                  </a>
                   <p>${proj.fullDesc}</p>
                   <ul class="list-inline">
                     <li>${getDateForModal(proj.publishedAt)}</li>

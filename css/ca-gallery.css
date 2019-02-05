@@ -104,6 +104,9 @@ body {
 .offcanvas-aside .offcanvas-content-suffix {
     height: 20%;
 }
+.offcanvas-aside .btn-send {
+    cursor: pointer;
+}
 
 @media (min-width: 575px) {
     .offcanvas-btn-open {
